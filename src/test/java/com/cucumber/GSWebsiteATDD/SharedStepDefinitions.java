@@ -26,8 +26,7 @@ public class SharedStepDefinitions extends AbstractSteps {
 
 	@When("^User clicks on About Us link$")
 	public void User_clicks_on_About_Us_link() throws Throwable {
-		//driver.findElement(By.partialLinkText("About Us")).click();
-		//driver.findElement(By.xpath("//a[contains(text(),'About Us')]")).click();
+		
 		driver.findElement(By.linkText("About Us")).sendKeys(Keys.ENTER);
 	}
 
