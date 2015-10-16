@@ -5,9 +5,9 @@ Feature: Testing GraduateSchool website UI navigations
 
   Scenario: User opens up GraduateSchool website and navigating the menus
     Given Open GraduateSchool website Home page
-    When User clicks on About Us link
-    When Click on News link
-    Then Verify News page is opened
+    #When User clicks on About Us link
+    #When Click on News link
+    #Then Verify News page is opened
     
 
   
