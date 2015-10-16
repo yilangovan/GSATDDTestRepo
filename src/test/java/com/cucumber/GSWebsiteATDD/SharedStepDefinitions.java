@@ -37,7 +37,7 @@ public class SharedStepDefinitions extends AbstractSteps {
 
 	@Then("^Verify News page is opened$")
 	public void Verify_News_page_is_opened() throws Throwable {
-		//Assert.assertEquals("Graduate School Website User Feedback Survey", driver.getTitle());
+		Assert.assertEquals("Graduate School Website User Feedback Survey", driver.getTitle());
 	}
 	
 	@After
