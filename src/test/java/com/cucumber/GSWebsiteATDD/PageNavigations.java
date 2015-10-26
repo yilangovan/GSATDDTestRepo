@@ -17,13 +17,15 @@ public class PageNavigations extends AbstractSteps {
 		String bName = GetBrowserName();
 		if(bName.equalsIgnoreCase("chrome")){		
 
-		WebElement element = driver.findElement(By.xpath("//a[contains(.,'Who We Are')]"));
+			//driver.findElement(By.xpath("//a[contains(text(),'Who We Are')]")).click();	
+		WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Who We Are')]"));
 
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element).click().perform();
 		}
 		else if(bName.equalsIgnoreCase("firefox")){
-		driver.findElement(By.xpath("//a[contains(.,'Who We Are')]")).click();
+		//driver.findElement(By.xpath("//a[contains(.,'Who We Are')]")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'Who We Are')]")).click();
 		}
 	}
 
@@ -39,13 +41,15 @@ public class PageNavigations extends AbstractSteps {
 		String bName = GetBrowserName();
 		if(bName.equalsIgnoreCase("chrome")){		
 
-		WebElement element = driver.findElement(By.xpath("//a[contains(.,'What We Offer')]"));
+		//WebElement element = driver.findElement(By.xpath("//a[contains(.,'What We Offer')]"));
+		WebElement element = driver.findElement(By.xpath("//a[contains(text(),'What We Offer')]"));
 
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element).click().perform();
 		}
 		else if(bName.equalsIgnoreCase("firefox")){
-		driver.findElement(By.xpath("//a[contains(.,'What We Offer')]")).click();
+		//driver.findElement(By.xpath("//a[contains(.,'What We Offer')]")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'What We Offer')]")).click();
 		}
 	}
 
@@ -55,13 +59,15 @@ public class PageNavigations extends AbstractSteps {
 		
 		if(bName.equalsIgnoreCase("chrome")){		
 
-		WebElement element = driver.findElement(By.xpath("//a[contains(.,'Our History')]"));
+		//WebElement element = driver.findElement(By.xpath("//a[contains(.,'Our History')]"));
+		WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Our History')]"));
 
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element).click().perform();
 		}
 		else if(bName.equalsIgnoreCase("firefox")){
-		driver.findElement(By.xpath("//a[contains(.,'Our History')]")).click();
+		//driver.findElement(By.xpath("//a[contains(.,'Our History')]")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'Our History')]")).click();
 		}
 	}
 
