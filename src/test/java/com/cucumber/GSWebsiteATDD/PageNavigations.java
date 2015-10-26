@@ -27,6 +27,7 @@ public class PageNavigations extends AbstractSteps {
 		//driver.findElement(By.xpath("//a[contains(.,'Who We Are')]")).click();
 		driver.findElement(By.xpath("//a[contains(text(),'Who We Are')]")).click();
 		}
+		
 	}
 
 	@Then("^Verify Site opens up About us page$")
