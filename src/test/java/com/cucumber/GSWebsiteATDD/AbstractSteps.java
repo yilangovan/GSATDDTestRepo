@@ -26,6 +26,7 @@ public class AbstractSteps {
 		
 		protected static WebDriver driver = null;
 		public String bname = null;
+		public String webURL = null;
 		
 		protected String GetBrowserName()
 		{
@@ -52,6 +53,33 @@ public class AbstractSteps {
 			}
 			return bname;
 		}
+		
+		protected String GetWebsiteHomeURL()
+		{
+			
+			try {
+				File file = new File("config.properties");
+				FileInputStream fileInput = new FileInputStream(file);
+				Properties properties = new Properties();
+				properties.load(fileInput);
+				fileInput.close();
+
+				Enumeration enuKeys = properties.keys();
+				while (enuKeys.hasMoreElements()) {
+					String key = (String) enuKeys.nextElement();
+					if(key.equals("devURL")){
+						webURL = properties.getProperty(key);				
+					}
+				}
+				
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			return webURL;
+		}
+		
 		
  		protected WebDriver getDriver(String browser){
 			

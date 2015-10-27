@@ -16,7 +16,7 @@ public class SharedStepDefinitions extends AbstractSteps {
 	
 	@Given("^Open GraduateSchool website Home page$")
 	public void Open_GraduateSchool_website_Home_page() throws Throwable {
-		driver.navigate().to("http://beta.graduateschool.edu");
+		driver.navigate().to(GetWebsiteHomeURL());
 	}
 	
 	@After
