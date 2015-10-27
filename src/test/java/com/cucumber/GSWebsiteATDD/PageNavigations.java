@@ -13,7 +13,6 @@ public class PageNavigations extends AbstractSteps {
 	@When("^User clicks on Who we are link$")
 	public void User_clicks_on_Who_we_are_link() throws Throwable {
 		
-
 		String bName = GetBrowserName();
 		if(bName.equalsIgnoreCase("chrome")){		
 
