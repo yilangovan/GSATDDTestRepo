@@ -14,27 +14,27 @@ public class PageNavigations extends AbstractSteps {
 	public void User_clicks_on_Who_we_are_link() throws Throwable {
 		
 
-//		String bName = GetBrowserName();
-//		if(bName.equalsIgnoreCase("chrome")){		
-//
-//			//driver.findElement(By.xpath("//a[contains(text(),'Who We Are')]")).click();	
-//		WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Who We Are')]"));
-//
-//		Actions actions = new Actions(driver);
-//		actions.moveToElement(element).click().perform();
-//		}
-//		else if(bName.equalsIgnoreCase("firefox")){
-//		//driver.findElement(By.xpath("//a[contains(.,'Who We Are')]")).click();
-//		driver.findElement(By.xpath("//a[contains(text(),'Who We Are')]")).click();
-//		}
+		String bName = GetBrowserName();
+		if(bName.equalsIgnoreCase("chrome")){		
+
+			//driver.findElement(By.xpath("//a[contains(text(),'Who We Are')]")).click();	
+		WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Who We Are')]"));
+
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element).click().perform();
+		}
+		else if(bName.equalsIgnoreCase("firefox")){
+		//driver.findElement(By.xpath("//a[contains(.,'Who We Are')]")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'Who We Are')]")).click();
+		}
 		
 	}
 
 	@Then("^Verify Site opens up About us page$")
 	public void Verify_Site_opens_up_About_us_page() throws Throwable {
-//		String title = "Graduate School USA | About Graduate School USA";
-//		driver.navigate().to("http://beta.graduateschool.edu/content/about-us");
-//		Assert.assertEquals(title, driver.getTitle());
+		String title = "Graduate School USA | About Graduate School USA";
+		driver.navigate().to("http://beta.graduateschool.edu/coent/about-us");
+		Assert.assertEquals(title, driver.getTitle());
 	}
 
 	@When("^User clicks on What we offer link$")
