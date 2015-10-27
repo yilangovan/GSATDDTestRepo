@@ -26,7 +26,7 @@ public class PageNavigations extends AbstractSteps {
 //		else if(bName.equalsIgnoreCase("firefox")){
 //		//driver.findElement(By.xpath("//a[contains(.,'Who We Are')]")).click();
 //		driver.findElement(By.xpath("//a[contains(text(),'Who We Are')]")).click();
-		//}
+//		}
 		
 	}
 
