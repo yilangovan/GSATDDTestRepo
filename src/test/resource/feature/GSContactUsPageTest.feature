@@ -1,4 +1,4 @@
-@contactusPage1
+@contactusPageForm
 Feature: Testing GraduateSchool Contact Us Fill out Form
   As a valid user of GraduateSchool website
   user should be able to Fill Contact Us Form

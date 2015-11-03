@@ -1,4 +1,4 @@
-@contactusPage
+@contactusPageLinks
 Feature: Testing GraduateSchool Home Page Link to Contact Us Page
   As a valid user of GraduateSchool website
   user should be able to open the Contact Us page

@@ -1,3 +1,4 @@
+@aboutUsPage
 Feature: Testing GraduateSchool website UI navigations
   As a valid user of GraduateSchool website
   user should be able navigate to the menus and other details
