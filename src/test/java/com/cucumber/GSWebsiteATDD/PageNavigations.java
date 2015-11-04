@@ -1,22 +1,24 @@
 package com.cucumber.GSWebsiteATDD;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-
+import com.gs.test.util.PageConstants;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import junit.framework.Assert;
 
 public class PageNavigations extends AbstractSteps {
+
+    @Given("^Open GraduateSchool website Page$")
+    public void Open_GraduateSchool_website_Page() throws Throwable {
+        driver.navigate().to(getPropertiesValue(PageConstants.DEV_URL));
+    }
 	
 	@When("^User clicks on Who we are link$")
 	public void User_clicks_on_Who_we_are_link() throws Throwable {
 		
-//		String bName = GetBrowserName();
-//		if(bName.equalsIgnoreCase("chrome")){		
+		String  browserName = getPropertiesValue(PageConstants.BROWSER_NAME);
+//		if(bName.equalsIgnoreCase("chrome")){
 //
-//			//driver.findElement(By.xpath("//a[contains(text(),'Who We Are')]")).click();	
+//			//driver.findElement(By.xpath("//a[contains(text(),'Who We Are')]")).click();
 //		WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Who We Are')]"));
 //
 //		Actions actions = new Actions(driver);
@@ -70,5 +72,7 @@ public class PageNavigations extends AbstractSteps {
 //		driver.findElement(By.xpath("//a[contains(text(),'Our History')]")).click();
 //		}
 	}
+
+
 
 }
