@@ -1,11 +1,15 @@
 package com.cucumber.GSWebsiteATDD;
 
 import com.gs.test.util.PageConstants;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import cucumber.api.java.en.Then;
@@ -14,7 +18,7 @@ import junit.framework.Assert;
 
 public class GSFeedbackPageTest extends AbstractSteps{
 
-	@Given("^Open Feedback form page$")
+    @Given("^Open Feedback form page$")
 	public void Open_Feedback_form_page() throws Throwable {
 		driver.navigate().to(getPropertiesValue(PageConstants.GS_CUSTOMERFEEDBACK_FORM));
 	}

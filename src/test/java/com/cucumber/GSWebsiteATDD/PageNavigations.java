@@ -19,7 +19,6 @@ import org.openqa.selenium.safari.SafariDriver;
 
 public class PageNavigations extends AbstractSteps {
 
-
     @Given("^Open GraduateSchool website Page$")
     public void Open_GraduateSchool_website_Page() throws Throwable {
         driver.navigate().to(getPropertiesValue(PageConstants.DEV_URL));
@@ -85,6 +84,7 @@ public class PageNavigations extends AbstractSteps {
 //		driver.findElement(By.xpath("//a[contains(text(),'Our History')]")).click();
 //		}
 	}
+
 
 
 }

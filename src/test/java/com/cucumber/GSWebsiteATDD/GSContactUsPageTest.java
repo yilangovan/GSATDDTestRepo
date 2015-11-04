@@ -1,22 +1,29 @@
 package com.cucumber.GSWebsiteATDD;
 
 import com.gs.test.util.PageConstants;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class GSContactUsPageTest extends AbstractSteps {
 
 
+
+
+
     @Given("^Open GraduateSchool website Home page$")
     public void Open_GraduateSchool_website_Home_page() throws Throwable {
-        driver.navigate().to(getPropertiesValue(PageConstants.DEV_URL));
+      // driver.navigate().to(getPropertiesValue(PageConstants.DEV_URL));
+
     }
     @Given("^Open GraduateSchool Contact US pages$")
     public void Open_GraduateSchool_Contact_US_page() throws Throwable {
 
-        driver.navigate().to(getPropertiesValue(PageConstants.GS_CONTACTUS_FORM));
+       driver.get(getPropertiesValue(PageConstants.GS_CONTACTUS_FORM));
     }
 
     @Then("^Verify Site opens up Contact Us page$")
