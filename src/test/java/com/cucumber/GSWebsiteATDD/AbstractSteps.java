@@ -1,5 +1,6 @@
 package com.cucumber.GSWebsiteATDD;
 
+import com.gs.test.util.PageConstants;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import junit.framework.TestSuite;
@@ -15,6 +16,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Enumeration;
 import java.util.Properties;
+
+
+//Common behaviour that shared across test automation project
 
 public class AbstractSteps {
 

@@ -40,8 +40,9 @@ public class GSContactUsPageTest extends AbstractSteps {
     public void User_clicks_on_Submit_button() throws Throwable {
         driver.findElement(By.id("submitForm")).click();
         String errorMessage = "For security, please verify you are a real person below";
+        Thread.sleep(500);
         String txtMsg = driver.findElement(By.id("alertError")).getText();
-      //  Assert.assertEquals(errorMessage, txtMsg);
+        Assert.assertEquals(errorMessage, txtMsg);
     }
 
 }
