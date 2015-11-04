@@ -1,21 +1,9 @@
 package com.cucumber.GSWebsiteATDD;
 
 import com.gs.test.util.PageConstants;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
-
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import junit.framework.Assert;
-import org.openqa.selenium.opera.OperaDriver;
-import org.openqa.selenium.safari.SafariDriver;
 
 public class PageNavigations extends AbstractSteps {
 
