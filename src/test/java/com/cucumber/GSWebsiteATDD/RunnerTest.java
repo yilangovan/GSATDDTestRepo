@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 @RunWith(Cucumber.class)
 @Cucumber.Options(
-        features = {"src/test/resource/feature"}
+        features = "src/test/resource/feature", tags={"@contactusPageForm, @feedbackForm, @aboutUsPage"}
 )
 public class RunnerTest {
 
